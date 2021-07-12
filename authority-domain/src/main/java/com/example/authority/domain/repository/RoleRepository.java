@@ -9,9 +9,9 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface RoleRepository extends JpaRepository<Role,Integer> {
-//    @Query(value = "SELECT ra.action.name AS url ,ra.role.roleName AS role " +
-//            "FROM RoleAction ra join Role r" +
-//            " ON ra.role.roleId = r.roleId " +
-//            "JOIN Action a ON a.id=ra.action.id")
-//    List<Role> findByRoleActions();
+    @Query(value = "SELECT r.roleName as role from Role r join" +
+            " RoleAction ra on ra.role.roleId = r.roleId" +
+            " join Action a on a.id = ra.action.id" +
+            " where a.name = ?1")
+    List<String> findByRoleActions(String url);
 }

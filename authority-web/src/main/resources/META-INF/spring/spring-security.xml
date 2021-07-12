@@ -7,15 +7,12 @@
         http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
     ">
 
-    <!--    <sec:http pattern="/resources/**" security="none"/>-->
     <sec:http auto-config="false">
         <sec:form-login login-page="/login" authentication-success-handler-ref="LoggedSuccess"
+                        authentication-success-forward-url="/"
                         password-parameter="password"
                         username-parameter="username"/>
         <sec:logout/>
-        <!--        <sec:access-denied-handler ref="accessDeniedHandler"/>-->
-        <!--        <sec:custom-filter ref="userIdMDCPutFilter" after="ANONYMOUS_FILTER"/>-->
-        <!--        <sec:session-management />-->
         <sec:custom-filter ref="filter" before="FILTER_SECURITY_INTERCEPTOR"/>
         <sec:logout invalidate-session="true" logout-success-url="/login"/>
     </sec:http>

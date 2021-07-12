@@ -12,14 +12,14 @@ import java.io.IOException;
 
 @Component
 public class LoggedSuccess implements AuthenticationSuccessHandler {
-    @Override
-    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authentication) throws IOException, ServletException {
-        AuthenticationSuccessHandler.super.onAuthenticationSuccess(request, response, chain, authentication);
-        response.sendRedirect("/");
-    }
+//    @Override
+//    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authentication) throws IOException, ServletException {
+//        AuthenticationSuccessHandler.super.onAuthenticationSuccess(request, response, chain, authentication);
+//        response.sendRedirect("http://localhost:8080/authority-web/");
+//    }
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
-        httpServletResponse.sendRedirect("/");
+        httpServletResponse.sendRedirect("http://localhost:8080/authority-web/");
     }
 }

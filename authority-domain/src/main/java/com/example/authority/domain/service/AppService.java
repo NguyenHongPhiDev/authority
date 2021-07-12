@@ -40,4 +40,11 @@ public class AppService {
                 .map(roleMapper::toRoleDto)
                 .collect(Collectors.toList());
     }
+
+    @Transactional(readOnly = true)
+    public List<String> getUrl(String url) {
+        return getUrlRoles.findByRoleActions(url)
+                .stream()
+                .collect(Collectors.toList());
+    }
 }

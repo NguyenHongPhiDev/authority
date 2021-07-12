@@ -38,7 +38,7 @@ public class DbFilterInvocationSecurityMetadataSource implements FilterInvocatio
 		String url=fi.getRequestUrl();
 		logger.debug("Request Url====>"+url);
 				
-		List<String> roles_=urlRoles.get(url);
+		List<String> roles_=appService.getUrl(url);
 		logger.debug("Url Associated Roles :"+roles_);
 		if(roles_==null){
 			return null;
