@@ -57,8 +57,8 @@
                     <artifactId>authority-env</artifactId>
                     <exclusions>
                         <exclusion>
-                            <groupId>com.h2database</groupId>
-                            <artifactId>h2</artifactId>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
                         </exclusion>
                     </exclusions>
                 </dependency>
@@ -148,6 +148,11 @@
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-el</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.8.1</version>
         </dependency>
         <!--  REMOVE THIS LINE IF YOU USE Spring Test DBUnit
         <dependency>
