@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:sec="http://www.springframework.org/schema/security"
-    xsi:schemaLocation="
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sec="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="
         http://www.springframework.org/schema/security https://www.springframework.org/schema/security/spring-security.xsd
         http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
     ">
 
-<!--    <sec:http pattern="/resources/**" security="none"/>-->
+    <!--    <sec:http pattern="/resources/**" security="none"/>-->
     <sec:http auto-config="false">
-        <sec:form-login login-page="/login"
+        <sec:form-login login-page="/login" authentication-success-handler-ref="LoggedSuccess"
                         password-parameter="password"
                         username-parameter="username"/>
         <sec:logout/>
-<!--        <sec:access-denied-handler ref="accessDeniedHandler"/>-->
-<!--        <sec:custom-filter ref="userIdMDCPutFilter" after="ANONYMOUS_FILTER"/>-->
-<!--        <sec:session-management />-->
-        <sec:custom-filter ref="filter" before="FILTER_SECURITY_INTERCEPTOR" />
+        <!--        <sec:access-denied-handler ref="accessDeniedHandler"/>-->
+        <!--        <sec:custom-filter ref="userIdMDCPutFilter" after="ANONYMOUS_FILTER"/>-->
+        <!--        <sec:session-management />-->
+        <sec:custom-filter ref="filter" before="FILTER_SECURITY_INTERCEPTOR"/>
         <sec:logout invalidate-session="true" logout-success-url="/login"/>
     </sec:http>
 
@@ -25,9 +25,9 @@
         <property name="accessDecisionManager">
             <bean class="org.springframework.security.access.vote.AffirmativeBased">
                 <constructor-arg>
-                       <bean class="org.springframework.security.access.vote.RoleVoter">
-                           <property name="rolePrefix" value="ROLE_"/>
-                       </bean>
+                    <bean class="org.springframework.security.access.vote.RoleVoter">
+                        <property name="rolePrefix" value="ROLE_"/>
+                    </bean>
                 </constructor-arg>
             </bean>
         </property>
@@ -35,43 +35,47 @@
     </bean>
 
     <sec:authentication-manager alias="authenticationManager">
-        <sec:authentication-provider user-service-ref="authenticationService"/>
+        <sec:authentication-provider
+                user-service-ref="authenticationService">
+            <sec:password-encoder ref="passwordEncoder"/>
+        </sec:authentication-provider>
     </sec:authentication-manager>
 
     <!-- CSRF Protection -->
     <bean id="accessDeniedHandler"
-        class="org.springframework.security.web.access.DelegatingAccessDeniedHandler">
+          class="org.springframework.security.web.access.DelegatingAccessDeniedHandler">
         <constructor-arg index="0">
             <map>
                 <entry
-                    key="org.springframework.security.web.csrf.InvalidCsrfTokenException">
+                        key="org.springframework.security.web.csrf.InvalidCsrfTokenException">
                     <bean
-                        class="org.springframework.security.web.access.AccessDeniedHandlerImpl">
+                            class="org.springframework.security.web.access.AccessDeniedHandlerImpl">
                         <property name="errorPage"
-                            value="/WEB-INF/views/common/error/invalidCsrfTokenError.jsp" />
+                                  value="/WEB-INF/views/common/error/invalidCsrfTokenError.jsp"/>
                     </bean>
                 </entry>
                 <entry
-                    key="org.springframework.security.web.csrf.MissingCsrfTokenException">
+                        key="org.springframework.security.web.csrf.MissingCsrfTokenException">
                     <bean
-                        class="org.springframework.security.web.access.AccessDeniedHandlerImpl">
+                            class="org.springframework.security.web.access.AccessDeniedHandlerImpl">
                         <property name="errorPage"
-                            value="/WEB-INF/views/common/error/missingCsrfTokenError.jsp" />
+                                  value="/WEB-INF/views/common/error/missingCsrfTokenError.jsp"/>
                     </bean>
                 </entry>
             </map>
         </constructor-arg>
         <constructor-arg index="1">
             <bean
-                class="org.springframework.security.web.access.AccessDeniedHandlerImpl">
+                    class="org.springframework.security.web.access.AccessDeniedHandlerImpl">
                 <property name="errorPage"
-                    value="/WEB-INF/views/common/error/accessDeniedError.jsp" />
+                          value="/WEB-INF/views/common/error/accessDeniedError.jsp"/>
             </bean>
         </constructor-arg>
     </bean>
+    <bean id="LoggedSuccess" class="com.example.authority.app.welcome.LoggedSuccess"/>
 
     <!-- Put UserID into MDC -->
-<!--    <bean id="userIdMDCPutFilter" class="org.terasoluna.gfw.security.web.logging.UserIdMDCPutFilter">-->
-<!--    </bean>-->
+    <!--    <bean id="userIdMDCPutFilter" class="org.terasoluna.gfw.security.web.logging.UserIdMDCPutFilter">-->
+    <!--    </bean>-->
 
 </beans>

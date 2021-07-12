@@ -20,5 +20,9 @@ public class HelloController {
     public String home() {
         return "login/login";
     }
+    @RequestMapping(value = "/", method = {RequestMethod.GET, RequestMethod.POST})
+    public String home1() {
+        return "welcome/home";
+    }
 
 }
