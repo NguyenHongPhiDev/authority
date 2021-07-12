@@ -14,7 +14,7 @@
                         username-parameter="username"/>
         <sec:logout/>
         <sec:custom-filter ref="filter" before="FILTER_SECURITY_INTERCEPTOR"/>
-        <sec:logout invalidate-session="true" logout-success-url="/login"/>
+        <sec:logout logout-url="/logout" invalidate-session="true" logout-success-url="/login"/>
     </sec:http>
 
     <bean id="filter" class="org.springframework.security.web.access.intercept.FilterSecurityInterceptor">

@@ -33,5 +33,8 @@ public class HelloController {
     public String home3() {
         return "welcome/admin";
     }
-
+    @RequestMapping(value = "/home", method = {RequestMethod.GET, RequestMethod.POST})
+    public String home4() {
+        return "welcome/index";
+    }
 }
