@@ -14,7 +14,7 @@ public class PermissionService {
     private final PermissionRepository permissionRepository;
     public List<Action> getAllPermission(){
         return permissionRepository
-                .findAll()
+                .findAllPermission()
                 .stream()
                 .collect(Collectors.toList());
     }
