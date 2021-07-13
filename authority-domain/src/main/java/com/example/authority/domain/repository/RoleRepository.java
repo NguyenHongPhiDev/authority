@@ -1,12 +1,9 @@
 package com.example.authority.domain.repository;
 
 import com.example.authority.domain.model.Role;
-import com.example.authority.domain.model.RoleAction;
-import com.example.authority.domain.model.UrlRolesBean;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import java.util.Collection;
 import java.util.List;
 
 public interface RoleRepository extends JpaRepository<Role,Integer> {

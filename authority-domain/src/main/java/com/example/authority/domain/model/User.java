@@ -1,18 +1,17 @@
 package com.example.authority.domain.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
+import javax.persistence.*;
+
 import static javax.persistence.GenerationType.IDENTITY;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "user", uniqueConstraints = @UniqueConstraint(columnNames = "USERNAME"))
 public class User implements java.io.Serializable {
 
@@ -67,5 +66,8 @@ public class User implements java.io.Serializable {
 	public void setUserRoles(Set<UserRole> userRoles) {
 		this.userRoles = userRoles;
 	}
+
+//	@ManyToMany
+//	public  Set<Action> getActions;
 
 }

@@ -69,7 +69,7 @@
             </bean>
         </constructor-arg>
     </bean>
-    <bean id="LoggedSuccess" class="com.example.authority.app.welcome.LoggedSuccess"/>
+    <bean id="LoggedSuccess" class="com.example.authority.app.security.LoggedSuccess"/>
 
     <!-- Put UserID into MDC -->
     <!--    <bean id="userIdMDCPutFilter" class="org.terasoluna.gfw.security.web.logging.UserIdMDCPutFilter">-->

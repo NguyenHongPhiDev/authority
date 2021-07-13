@@ -38,27 +38,22 @@ public class LoggedUser implements UserDetails{
 	}
 
 	public String getUsername() {
-		// TODO Auto-generated method stub
-		return user.getPassword();
+		return user.getUsername();
 	}
 
 	public boolean isAccountNonExpired() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	public boolean isAccountNonLocked() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	public boolean isCredentialsNonExpired() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	public boolean isEnabled() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 

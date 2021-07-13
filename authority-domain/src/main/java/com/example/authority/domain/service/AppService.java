@@ -1,8 +1,6 @@
 package com.example.authority.domain.service;
 
 import com.example.authority.domain.Dto.RoleDto;
-import com.example.authority.domain.dao.AppDAO;
-import com.example.authority.domain.model.UrlRolesBean;
 import com.example.authority.domain.model.User;
 import com.example.authority.domain.repository.RoleRepository;
 import com.example.authority.domain.repository.UserRepository;
@@ -11,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,10 +20,6 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class AppService {
     private static final Logger logger = LoggerFactory.getLogger(AppService.class);
-
-    @Autowired
-    private UrlCache urlCache;
-
     private final UserRepository getUser;
     private final RoleRepository getUrlRoles;
     private final RoleMapper roleMapper ;

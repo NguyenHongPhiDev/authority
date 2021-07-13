@@ -18,6 +18,7 @@ public class Action implements java.io.Serializable {
 
 	private Integer id;
 	private String name;
+	private String description;
 	private Set<RoleAction> roleActions = new HashSet<RoleAction>(0);
 
 	public Action() {
@@ -46,6 +47,14 @@ public class Action implements java.io.Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	@Column(name = "description", length = 200)
+	public String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "action")
