@@ -36,7 +36,6 @@ public class AuthenticationService implements UserDetailsService{
 			throw new UsernameNotFoundException("User doesn`t exist");
 		}
 		
-		//Fetching User roles form DB.
 		Set<UserRole> userRoles=user.getUserRoles();
 		List<String> dbRoles=new ArrayList<String>();
 		for (UserRole userRole : userRoles) {
@@ -44,7 +43,6 @@ public class AuthenticationService implements UserDetailsService{
 		}
 		logger.debug("Roles of :"+username+" is "+dbRoles);
 		
-		// pass user object and roles to LoggedUser
 		LoggedUser loggedUser=new LoggedUser(user, dbRoles);
 		return loggedUser;
 	}

@@ -1,5 +1,8 @@
 package com.example.authority.domain.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -11,6 +14,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "user_role")
 public class UserRole implements java.io.Serializable {
 
@@ -37,6 +42,10 @@ public class UserRole implements java.io.Serializable {
 		this.id = id;
 	}
 
+//	@Column(name = "USER_ID")
+//	private Integer user_id;
+//	@Column(name = "USER_ROLE")
+//	private Integer role_id;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "USER_ID")
 	public User getUser() {

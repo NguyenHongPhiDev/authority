@@ -1,6 +1,9 @@
 package com.example.authority.domain.model;
 // Generated Aug 5, 2015 11:46:07 AM by Hibernate Tools 4.0.0
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
