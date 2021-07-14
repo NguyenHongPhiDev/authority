@@ -25,10 +25,8 @@ public class HelloController {
     }
     @GetMapping("/")
     public String home1(Model model,Principal principal) {
-        String username = principal.getName();
+        String username = "chưa đăng nhập";
         model.addAttribute("username",username);
-        model.addAttribute("role", SecurityContextHolder.getContext().getAuthentication().getAuthorities());
-
         return "welcome/home";
     }
 
@@ -38,11 +36,12 @@ public class HelloController {
     }
     @GetMapping("/admin")
     public String home3(Model model,Principal  principal) {
-        String username = principal.getName();
+
+        String username = (principal.getName()!=null) ? principal.getName() : "chưa đăng nhập";
         model.addAttribute("username",username);
-        model.addAttribute("role", SecurityContextHolder.getContext().getAuthentication().getAuthorities());
         List<User> userList = userService.userList();
         model.addAttribute("userList",userList);
+        model.addAttribute("role", SecurityContextHolder.getContext().getAuthentication().getAuthorities());
         Object a = model.getAttribute("description");
         model.addAttribute("abc",a);
         return "welcome/admin";

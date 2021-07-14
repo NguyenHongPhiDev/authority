@@ -22,6 +22,7 @@ public class Permission {
     private final PermissionService permissionService ;
     @RequestMapping(value = "/permission", method = {RequestMethod.POST,RequestMethod.GET},params = "user_id")
     public String updatePermission(Model model, @RequestParam(value = "user_id") Integer id){
+        String [] favLanguages;
         User user = userService.findById(id);
         List<Action> actionList = permissionService.getAllPermission();
         model.addAttribute("actions",actionList);

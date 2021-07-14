@@ -164,5 +164,6 @@
     <orderEntry type="library" name="Maven: org.apache.ant:ant:1.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.8.1" level="project" />
     <orderEntry type="module" module-name="authority-env" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>

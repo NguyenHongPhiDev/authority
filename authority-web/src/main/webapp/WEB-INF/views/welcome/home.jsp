@@ -1,13 +1,16 @@
 <div id="wrapper">
     <h4>Đây là trang Home</h4>
-    <h2>Username :${username}  roles : (${role})</h2>
+    <sec:authorize access="!isAuthenticated()">
+        <h2>Username :${username}</h2>
+    </sec:authorize>
+
     <ul>
         <li>
             <sec:authorize access="isAuthenticated()">
-            <a href="${f:h(pageContext.request.contextPath)}/logout">Logout</a>
+                <a href="${f:h(pageContext.request.contextPath)}/logout">Logout</a>
             </sec:authorize>
             <sec:authorize access="!isAuthenticated()">
-            <a href="${f:h(pageContext.request.contextPath)}/login">Login</a>
+                <a href="${f:h(pageContext.request.contextPath)}/login">Login</a>
             </sec:authorize>
         </li>
         <li><a href="${f:h(pageContext.request.contextPath)}/admin">Đến trang admin</a></li>
