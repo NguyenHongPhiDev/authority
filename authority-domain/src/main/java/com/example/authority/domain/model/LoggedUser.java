@@ -8,11 +8,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-/**
- * 
- * @author Srinivas Nalla
- *
- */
 public class LoggedUser implements UserDetails{
 	
 	private User user;

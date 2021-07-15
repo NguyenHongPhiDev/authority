@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.security.Principal;
 import java.util.List;
 
@@ -24,7 +27,7 @@ public class HelloController {
         return "login/login";
     }
     @GetMapping("/")
-    public String home1(Model model,Principal principal) {
+    public String home1(Model model, Principal principal) {
         String username = "chưa đăng nhập";
         model.addAttribute("username",username);
         return "welcome/home";

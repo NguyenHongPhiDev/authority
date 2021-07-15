@@ -1,11 +1,8 @@
 package com.example.authority.app.controller;
 
-import com.example.authority.domain.Dto.CheckDto;
-import com.example.authority.domain.Dto.request.PermissionRequest;
 import com.example.authority.domain.model.Action;
 import com.example.authority.domain.model.User;
 import com.example.authority.domain.service.PermissionService;
-import com.example.authority.domain.service.RoleService;
 import com.example.authority.domain.service.UserRoleService;
 import com.example.authority.domain.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -53,6 +50,6 @@ public class Permission {
                 permissionService.Delete(role_id, Integer.valueOf(uncheckList[i]));
             }
         }
-        return "welcome/permission" ;
+        return "welcome/admin" ;
     }
 }
