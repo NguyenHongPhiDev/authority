@@ -38,10 +38,6 @@ public class RestFB {
 	}
 
 	public UserDetails buildUser(com.restfb.types.User user) {
-//		boolean enabled = true;
-//		boolean accountNonExpired = true;
-//		boolean credentialsNonExpired = true;
-//		boolean accountNonLocked = true;
 		List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
 		authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
 		UserDetails userDetail = new User(user.getId(), "", true, true, true,
