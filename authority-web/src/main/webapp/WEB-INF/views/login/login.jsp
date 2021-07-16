@@ -38,6 +38,10 @@
             </tr>
         </table>
     </form:form>
+    <a id="loginFB"
+       href="https://www.facebook.com/dialog/oauth?client_id=182502713859613&redirect_uri=http://localhost:8080/authority-web/login-facebook">
+        Login with facebook
+    </a>
 </div>
 </body>
 </html>

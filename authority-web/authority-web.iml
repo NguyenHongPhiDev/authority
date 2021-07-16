@@ -41,6 +41,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="twitter-bootstrap" level="application" />
+    <orderEntry type="library" name="animejs" level="application" />
     <orderEntry type="module" module-name="authority-domain" />
     <orderEntry type="library" name="Maven: org.terasoluna.gfw:terasoluna-gfw-common:5.7.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.6" level="project" />
@@ -96,7 +99,6 @@
     <orderEntry type="library" name="Maven: org.jadira.usertype:usertype.core:6.0.1.GA" level="project" />
     <orderEntry type="library" name="Maven: org.jadira.usertype:usertype.spi:6.0.1.GA" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.4" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-dbcp2:2.8.0" level="project" />
@@ -163,7 +165,15 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.41" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant:1.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.8.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" name="Maven: jstl:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.15" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:fluent-hc:4.5.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.restfb:restfb:2.3.0" level="project" />
     <orderEntry type="module" module-name="authority-env" />
-    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
