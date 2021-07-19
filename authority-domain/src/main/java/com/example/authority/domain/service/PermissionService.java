@@ -40,12 +40,14 @@ public class PermissionService {
                 });
     }
 
+    @Transactional
     public void Insert(Integer role_id, Integer permission_id) {
         RoleAction roleAction= new RoleAction();
         roleAction.setRole(roleService.findRoleById(role_id));
         roleAction.setAction(findPermissionById(permission_id));
         role_permissionRepository.save(roleAction);
     }
+    @Transactional
     public void Delete(Integer role_id, Integer permission_id) {
         Optional<RoleAction> action = role_permissionRepository.findByAction_IdAndRole_Id(role_id,permission_id);
         role_permissionRepository.deleteById(action.get().getId());

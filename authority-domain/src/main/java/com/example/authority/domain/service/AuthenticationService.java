@@ -16,11 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-/**
- * 
- * @author Srinivas Nalla
- *
- */
 @Service
 @Transactional
 public class AuthenticationService implements UserDetailsService{

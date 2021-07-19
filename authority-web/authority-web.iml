@@ -44,6 +44,7 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="twitter-bootstrap" level="application" />
     <orderEntry type="library" name="animejs" level="application" />
+    <orderEntry type="library" name="o" level="project" />
     <orderEntry type="module" module-name="authority-domain" />
     <orderEntry type="library" name="Maven: org.terasoluna.gfw:terasoluna-gfw-common:5.7.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.9.6" level="project" />

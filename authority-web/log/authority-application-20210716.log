@@ -1,0 +1,194 @@
+date:2021-07-16 10:17:57	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/]}: home1(Model,Principal)
+	{GET [/user]}: home2()
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 10:17:57	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:17:57	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home1(Model, Principal)
+date:2021-07-16 10:25:26	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/]}: home1(Model,Principal)
+	{GET [/user]}: home2()
+	{GET [/admin]}: home3(Model,Principal)
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:25:26	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:25:26	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home1(Model, Principal)
+date:2021-07-16 10:25:37	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/]}: home1(Model,Principal)
+	{GET [/user]}: home2()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:25:37	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:25:38	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home1(Model, Principal)
+date:2021-07-16 10:25:57	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:25:57	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:25:58	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home()
+date:2021-07-16 10:25:58	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:25:58	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:25:58	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home1(Model, Principal)
+date:2021-07-16 10:25:58	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:25:58	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:25:58	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home2()
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home()
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home1(Model, Principal)
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home2()
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:27:53	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home3(Model, Principal)
+date:2021-07-16 10:31:44	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/]}: home1(Model,Principal)
+	{GET [/user]}: home2()
+	{GET [/admin]}: home3(Model,Principal)
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 10:31:44	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:31:45	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home3(Model, Principal)
+date:2021-07-16 10:35:16	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/user]}: home2()
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 10:35:16	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:37:35	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 10:37:35	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:37:46	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 10:37:46	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 10:37:46	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home3(Model, Principal)
+date:2021-07-16 10:38:04	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{GET [/]}: home1(Model,Principal)
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 10:38:04	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 11:15:19	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/user]}: home2()
+	{[GET, POST] [/login]}: home()
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 11:15:19	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 11:17:34	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/user]}: home2()
+	{GET [/]}: home1(Model,Principal)
+	{GET [/admin]}: home3(Model,Principal)
+	{[GET, POST] [/login]}: home()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+	{GET [/home]}: home4()
+date:2021-07-16 11:17:34	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 11:19:16	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/]}: home1(Model,Principal)
+	{GET [/user]}: home2()
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 11:19:16	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 11:24:20	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{GET [/user]}: home2()
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/]}: home1(Model,Principal)
+	{[GET, POST] [/login]}: home()
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 11:24:20	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 11:24:20	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home3(Model, Principal)
+date:2021-07-16 11:24:46	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.HelloController:
+	{[GET, POST] [/login]}: home()
+	{GET [/admin]}: home3(Model,Principal)
+	{GET [/]}: home1(Model,Principal)
+	{GET [/user]}: home2()
+	{GET [/home]}: home4()
+	{ [/login-facebook]}: loginFacebook(HttpServletRequest)
+date:2021-07-16 11:24:46	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:6 mappings in <unknown>
+date:2021-07-16 11:24:47	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.HelloController#home3(Model, Principal)

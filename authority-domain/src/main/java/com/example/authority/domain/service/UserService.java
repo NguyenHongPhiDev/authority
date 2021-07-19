@@ -30,7 +30,8 @@ public class UserService {
                 .findById(id)
                 .orElseGet(() -> {
                     log.warn("User not found. User_id {}", id);
-                    throw new ResourceNotFoundException("User not found. Username: " + id);
+//                    throw new ResourceNotFoundException("User not found. Username: " + id);
+                    return null;
                 });
     }
 }

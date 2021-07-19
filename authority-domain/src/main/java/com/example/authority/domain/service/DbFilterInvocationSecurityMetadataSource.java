@@ -26,12 +26,6 @@ public class DbFilterInvocationSecurityMetadataSource implements FilterInvocatio
 	
 	@Autowired
 	private AppService appService;
-	
-	@Autowired
-	private UrlCache urlCache;
-	
-	private HashMap<String, List<String>> urlRoles;
-	
 	public Collection<ConfigAttribute> getAttributes(Object object)
 			throws IllegalArgumentException {
 		FilterInvocation fi=(FilterInvocation)object;
@@ -61,8 +55,6 @@ public class DbFilterInvocationSecurityMetadataSource implements FilterInvocatio
 	public void afterPropertiesSet() throws Exception {
 		
 		appService.getUrlRoles();
-		this.urlRoles=urlCache.getUrlRoles();
-		logger.debug("Url Roles object :"+urlRoles);
 	}
 
 }
