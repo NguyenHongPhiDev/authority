@@ -43,8 +43,16 @@ public class PermissionService {
     @Transactional
     public void Insert(Integer role_id, Integer permission_id) {
         RoleAction roleAction= new RoleAction();
-        roleAction.setRole(roleService.findRoleById(role_id));
-        roleAction.setAction(findPermissionById(permission_id));
+        Role  role = roleService.findRoleById((role_id));
+        if(role==null){
+            throw new ResourceNotFoundException("Role not found! , role_id : "+role_id);
+        }
+        roleAction.setRole(role);
+        Action action = findPermissionById(permission_id);
+        if(action==null){
+            throw new ResourceNotFoundException("Permission not found! , permission_id : "+role_id);
+        }
+        roleAction.setAction(action);
         role_permissionRepository.save(roleAction);
     }
     @Transactional
