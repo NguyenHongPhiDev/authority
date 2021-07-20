@@ -1,12 +1,13 @@
 package com.example.authority.app.controller.Adminstration;
 
+import com.example.authority.domain.Dto.request.FoodRequest;
 import com.example.authority.domain.model.Action;
+import com.example.authority.domain.model.Category;
 import com.example.authority.domain.model.Food;
 import com.example.authority.domain.model.User;
-import com.example.authority.domain.service.FoodService;
-import com.example.authority.domain.service.PermissionService;
-import com.example.authority.domain.service.UserRoleService;
-import com.example.authority.domain.service.UserService;
+import com.example.authority.domain.service.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,14 +20,16 @@ import java.util.Map;
 @Controller
 @RequiredArgsConstructor
 public class AdminController {
+
     private final UserService userService ;
     private final FoodService foodService;
     private final PermissionService permissionService ;
     private final UserRoleService userRoleService;
+    private final CategoryService categoryService;
 
     /*=========================== Begin Admin ===========================*/
     @GetMapping("/admin")
-    public String viewAdmin(){
+    public String viewAdmin(Model model){
         return "administration/index";
     }
     /*=========================== End Admin ===========================*/
@@ -39,9 +42,35 @@ public class AdminController {
         model.addAttribute("food",foodList);
         return "administration/product/food";
     }
-    @GetMapping(value = "/food",params ="addFood" )
-    public String CreateFood(){
+    @RequestMapping(value = "/admin/food",params ="addFood" )
+    public String CreateFood(Model model){
+        List<Category> allCategory = categoryService.getAllCategory();
+        model.addAttribute("categories",allCategory);
         return "administration/product/createFood";
+    }
+    @RequestMapping(value = "/admin/food",params ={"add","name","amount","category"} )
+    public String AddFood(Model model,@RequestParam(value = "name") String name,@RequestParam(value = "amount") Integer amount, @RequestParam(value = "category") Integer cate_id){
+        foodService.addFood(name,amount,cate_id);
+        return selectFood(model);
+    }
+    @RequestMapping(value = "/admin/food", method = RequestMethod.POST,params = "delete_id")
+    public String DeleteFood(Model model,@RequestParam(value = "delete_id") Integer id){
+        foodService.deleteFood(id);
+        return selectFood(model);
+    }
+    @RequestMapping(value = "/admin/food", method = {RequestMethod.GET,RequestMethod.POST},params = "update_id")
+    public String UpdateFoodForm(Model model,@RequestParam(value = "update_id") Integer id){
+            Food  food = foodService.getFoodById(id);
+        List<Category> allCategory = categoryService.getAllCategory();
+        model.addAttribute("food",food);
+        model.addAttribute("categories",allCategory);
+
+        return "administration/product/updateFood";
+    }
+    @RequestMapping(value = "/admin/food",params ={"update","name","amount","category"} )
+    public String UpdateFood(Model model,@RequestParam(value = "id") Integer id,@RequestParam(value = "name") String name,@RequestParam(value = "amount") Integer amount, @RequestParam(value = "category") Integer cate_id){
+        foodService.updateFood(id,name,amount,cate_id);
+        return selectFood(model);
     }
 
     /*=========================== End Food ===========================*/

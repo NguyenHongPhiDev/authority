@@ -27,7 +27,7 @@ public class PermissionServiceTest {
     Role_permissionRepository role_permissionRepository;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         roleRepository = mock(RoleRepository.class);
         permissionRepository = mock(PermissionRepository.class);
         role_permissionRepository = mock(Role_permissionRepository.class);
@@ -42,9 +42,7 @@ public class PermissionServiceTest {
         Action action = new Action();
         when(roleRepository.findById(role_id)).thenReturn(Optional.empty());
         when(permissionRepository.findById(user_id)).thenReturn(Optional.of(action));
-        assertThrows(ResourceNotFoundException.class,()->{
-           roleService.findRoleById(role_id);
-        });
+        assertThrows(ResourceNotFoundException.class,()-> roleService.findRoleById(role_id));
     }
     @Test
     public void insert_actionNull() {
@@ -52,9 +50,7 @@ public class PermissionServiceTest {
         Role role = new Role();
         when(roleRepository.findById(role_id)).thenReturn(Optional.of(role));
         when(permissionRepository.findById(user_id)).thenReturn(Optional.empty());
-        assertThrows(ResourceNotFoundException.class,()->{
-            permissionService.findPermissionById(role_id);
-        });
+        assertThrows(ResourceNotFoundException.class,()-> permissionService.findPermissionById(role_id));
     }
     @Test
     public void insert_success() {
@@ -98,7 +94,10 @@ public class PermissionServiceTest {
     }
 
     @Test
-    public void delete_false() {
-        
+    public void delete_success() {
+        int role_id =2,per_id =2;
+        RoleAction roleAction = new RoleAction();
+        when(role_permissionRepository.findByAction_IdAndRole_Id(role_id,per_id)).thenReturn(Optional.of(roleAction));
+        assertDoesNotThrow(()->permissionService.Delete(role_id,per_id));
     }
 }

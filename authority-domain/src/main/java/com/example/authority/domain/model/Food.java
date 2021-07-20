@@ -4,7 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.Set;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity(name = "Food")
 @Table(name ="food")
@@ -12,7 +13,8 @@ import java.util.Set;
 @Setter
 public class Food {
     @Id
-    @Column(name = "id")
+    @GeneratedValue(strategy = IDENTITY)
+    @Column(name = "ID", unique = true, nullable = false)
     private Integer id;
 
     @Column(name = "food_name")

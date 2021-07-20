@@ -64,6 +64,7 @@ public class UserServiceTest {
         Integer id = 1;
         when(userRepository.findById(id)).thenReturn(Optional.empty());
         User result = userService.findById(id);
-        assertThat(result, is(nullValue()));
+//        assertThat(result, is(nullValue()));
+        assertNull(result);
     }
 }
