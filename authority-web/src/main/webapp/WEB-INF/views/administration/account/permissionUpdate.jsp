@@ -60,7 +60,7 @@
                     data: formData,
                     dataType: "text",
                     success: function(){
-                        alert("Save Complete");
+                        window.location.replace("http://localhost:8080/authority-web/admin/permission");
                     }
                 });
             });

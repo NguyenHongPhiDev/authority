@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -17,7 +18,8 @@ public class FoodController {
     private final FoodService foodService;
 
     @GetMapping("/food")
-    public String  selectFood(Model model){
+    public String  selectFood(Model model, Principal principal){
+//        principal.getName();
         List<Food> foodList = foodService.getAllFood();
         model.addAttribute("food",foodList);
         return "products/foods";

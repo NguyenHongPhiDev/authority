@@ -106,6 +106,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.projectlombok:lombok:1.18.16" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: mysql:mysql-connector-java:8.0.22" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: javax.persistence:javax.persistence-api:2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.mortbay.jetty:servlet-api:9.0.46" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.tomcat:tomcat-servlet-api:9.0.41" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-core:5.3.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-jcl:5.3.2" level="project" />

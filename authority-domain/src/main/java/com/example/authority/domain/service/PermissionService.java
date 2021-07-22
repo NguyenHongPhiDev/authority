@@ -1,14 +1,14 @@
 package com.example.authority.domain.service;
 
-import com.example.authority.domain.model.Action;
-import com.example.authority.domain.model.Role;
-import com.example.authority.domain.model.RoleAction;
+import com.example.authority.domain.model.*;
+import com.example.authority.domain.repository.FoodRepository;
 import com.example.authority.domain.repository.PermissionRepository;
 import com.example.authority.domain.repository.Role_permissionRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.HttpClientErrorException;
 import org.terasoluna.gfw.common.exception.ResourceNotFoundException;
 
 import javax.persistence.Id;
@@ -24,7 +24,6 @@ public class PermissionService {
     private final PermissionRepository permissionRepository;
     private final Role_permissionRepository role_permissionRepository;
     private final RoleService roleService ;
-
     public List<Action> getAllPermission() {
         return permissionRepository
                 .findAllPermission()

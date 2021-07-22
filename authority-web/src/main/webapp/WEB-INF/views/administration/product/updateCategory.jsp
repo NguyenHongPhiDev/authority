@@ -12,9 +12,10 @@
 </head>
 <body>
 <form:form action="${f:h(pageContext.request.contextPath)}/admin/category">
+    <input type="hidden" name="id" value="${categories.id}">
     <lable>Tên : </lable>
-    <input type="text" name="name" required />
-    <input type="submit" name="addCate" value="Add">
+    <input type="text" name="name" value="${categories.categoryName}" required/>
+    <input type="submit" name="updateCate" value="update">
 </form:form>
 </body>
 </html>

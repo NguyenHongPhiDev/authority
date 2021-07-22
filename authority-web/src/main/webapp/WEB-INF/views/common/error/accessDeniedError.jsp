@@ -7,35 +7,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <h1>Access Denied Error!</h1>
-        <div class="error">
-            <c:if test="${!empty exceptionCode}">[${f:h(exceptionCode)}]</c:if>
-            <spring:message code="e.xx.fw.7003" />
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <h4>Vào đây làm gì? Có quyền đâu mà vào đây!!!</h4>
     </div>
 </body>
 </html>

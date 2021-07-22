@@ -1,13 +1,10 @@
 package com.example.authority.app.controller.Adminstration;
 
-import com.example.authority.domain.Dto.request.FoodRequest;
 import com.example.authority.domain.model.Action;
 import com.example.authority.domain.model.Category;
 import com.example.authority.domain.model.Food;
 import com.example.authority.domain.model.User;
 import com.example.authority.domain.service.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,7 +26,7 @@ public class AdminController {
 
     /*=========================== Begin Admin ===========================*/
     @GetMapping("/admin")
-    public String viewAdmin(Model model){
+    public String viewAdmin(){
         return "administration/index";
     }
     /*=========================== End Admin ===========================*/
@@ -125,7 +122,7 @@ public class AdminController {
                 permissionService.Delete(role_id, Integer.valueOf(uncheckList[i]));
             }
         }
-        return "administration/index" ;
+        return viewPermission(model) ;
     }
     /*=========================== End Permission ===========================*/
 }

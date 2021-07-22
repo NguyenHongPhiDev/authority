@@ -7,6 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class FoodRequest {
+    private Integer id;
     private String food_Name;
     private String amount;
     private Category category;

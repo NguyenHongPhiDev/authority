@@ -3,6 +3,7 @@ package com.example.authority.domain.service;
 import com.example.authority.domain.model.Action;
 import com.example.authority.domain.model.Role;
 import com.example.authority.domain.model.RoleAction;
+import com.example.authority.domain.repository.FoodRepository;
 import com.example.authority.domain.repository.PermissionRepository;
 import com.example.authority.domain.repository.RoleRepository;
 import com.example.authority.domain.repository.Role_permissionRepository;
@@ -90,6 +91,7 @@ public class PermissionServiceTest {
         Action action =  new Action();
         when(permissionRepository.findById(2)).thenReturn(Optional.of(action));
         Action result = permissionService.findPermissionById(per_id);
+        assertDoesNotThrow(()->permissionService.findPermissionById(per_id));
         assertThat(result,is(action));
     }
 

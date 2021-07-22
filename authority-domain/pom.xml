@@ -118,6 +118,17 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>9.0.46</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>9.0.41</version>
+            <scope>compile</scope>
+        </dependency>
         <!--  REMOVE THIS LINE IF YOU USE Spring Test DBUnit
         <dependency>
             <groupId>org.dbunit</groupId>

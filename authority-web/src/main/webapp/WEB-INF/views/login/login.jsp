@@ -28,6 +28,15 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
+                <td>
+                    <a id="loginFB"
+                       href="https://www.facebook.com/dialog/oauth?client_id=182502713859613&redirect_uri=http://localhost:8080/authority-web/login-facebook">
+                        Login with facebook
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
                 <td><a id="create" href="${f:h(pageContext.request.contextPath)}/accounts/create?form">Create new
                     account</a></td>
             </tr>
@@ -38,10 +47,6 @@
             </tr>
         </table>
     </form:form>
-    <a id="loginFB"
-       href="https://www.facebook.com/dialog/oauth?client_id=182502713859613&redirect_uri=http://localhost:8080/authority-web/login-facebook">
-        Login with facebook
-    </a>
 </div>
 </body>
 </html>

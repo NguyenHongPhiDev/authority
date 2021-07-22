@@ -54,26 +54,4 @@ public class HomeControllerTest {
             fail();
         }
     }
-
-
-//    @Test
-//    public void home3() throws Exception {
-//        HelloController helloController = new HelloController(restFBl, userService);
-////        Set<UserRole> userRoleSet = new HashSet<>();
-//        List<User> userList = Arrays.asList(
-//                new User("admin", "{pbkdf2}1dd84f42a7a9a173f8f806d736d34939bed6a36e2948e8bfe88801ee5e6e61b815efc389d03165a4", userRoles),
-//                new User("staff", "{pbkdf2}1dd84f42a7a9a173f8f806d736d34939bed6a36e2948e8bfe88801ee5e6e61b815efc389d03165a4", userRoles),
-//                new User("user", "{pbkdf2}1dd84f42a7a9a173f8f806d736d34939bed6a36e2948e8bfe88801ee5e6e61b815efc389d03165a4", userRoles)
-//        );
-//        doReturn(userList).when(userRepository).findAll();
-//        mockMvc = MockMvcBuilders.standaloneSetup(helloController).build();
-//        MockHttpServletRequestBuilder postRequest = MockMvcRequestBuilders.get(
-//                "/admin");
-//        try {
-//            ResultActions resultActions = mockMvc.perform(MockMvcRequestBuilders.get("/admin")).andExpect(view().name(ADMIN));
-//            return;
-//        } catch (Exception e) {
-//            fail();
-//        }
-//    }
 }

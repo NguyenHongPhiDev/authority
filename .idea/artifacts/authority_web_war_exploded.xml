@@ -101,6 +101,8 @@
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.16" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.22" />
           <element id="library" level="project" name="Maven: javax.persistence:javax.persistence-api:2.2" />
+          <element id="library" level="project" name="Maven: org.mortbay.jetty:servlet-api:9.0.46" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:9.0.41" />
           <element id="library" level="project" name="Maven: org.terasoluna.gfw:terasoluna-gfw-web:5.7.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.2" />
           <element id="library" level="project" name="Maven: org.terasoluna.gfw:terasoluna-gfw-web-jsp:5.7.0.RELEASE" />

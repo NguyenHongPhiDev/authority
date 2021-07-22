@@ -1,0 +1,61 @@
+date:2021-07-21 10:40:56	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.A.AdminController:
+	{[POST, GET] [/admin/permission/update]}: update(Model,HttpServletRequest)
+	{GET [/admin/food]}: selectFood(Model)
+	{GET [/admin]}: viewAdmin()
+	{ [/admin/food], params [addFood]}: CreateFood(Model)
+	{POST [/admin/food], params [delete_id]}: DeleteFood(Model,Integer)
+	{[POST, GET] [/admin/permission], params [user_id]}: updatePermission(Model,Integer)
+	{[GET, POST] [/admin/food], params [update_id]}: UpdateFoodForm(Model,Integer)
+	{[POST, GET] [/admin/permission], params [action && description && add]}: addPermission(Model,String,String)
+	{ [/admin/food], params [update && name && amount && category]}: UpdateFood(Model,Integer,String,Integer,Integer)
+	{ [/admin/food], params [add && name && amount && category]}: AddFood(Model,String,Integer,Integer)
+	{POST [/admin/permission], params [addPermission]}: formPermission()
+	{[POST, GET] [/admin/permission]}: viewPermission(Model)
+date:2021-07-21 10:40:56	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:12 mappings in <unknown>
+date:2021-07-21 10:40:57	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped to com.example.authority.app.controller.Adminstration.AdminController#selectFood(Model)
+date:2021-07-21 16:10:06	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.A.AdminController:
+	{[POST, GET] [/admin/permission/update]}: update(Model,HttpServletRequest)
+	{GET [/admin/food]}: selectFood(Model)
+	{GET [/admin]}: viewAdmin()
+	{ [/admin/food], params [addFood]}: CreateFood(Model)
+	{POST [/admin/food], params [delete_id]}: DeleteFood(Model,Integer)
+	{ [/admin/food], params [update && name && amount && category]}: UpdateFood(Model,Integer,String,Integer,Integer)
+	{[GET, POST] [/admin/food], params [update_id]}: UpdateFoodForm(Model,Integer)
+	{[POST, GET] [/admin/permission]}: viewPermission(Model)
+	{POST [/admin/permission], params [addPermission]}: formPermission()
+	{ [/admin/food], params [add && name && amount && category]}: AddFood(Model,String,Integer,Integer)
+	{[POST, GET] [/admin/permission], params [action && description && add]}: addPermission(Model,String,String)
+	{[POST, GET] [/admin/permission], params [user_id]}: updatePermission(Model,Integer)
+date:2021-07-21 16:10:06	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:12 mappings in <unknown>
+date:2021-07-21 16:12:49	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.A.AdminController:
+	{[POST, GET] [/admin/permission/update]}: update(Model,HttpServletRequest)
+	{GET [/admin/food]}: selectFood(Model)
+	{GET [/admin]}: viewAdmin()
+	{ [/admin/food], params [addFood]}: CreateFood(Model)
+	{[POST, GET] [/admin/permission]}: viewPermission(Model)
+	{POST [/admin/permission], params [addPermission]}: formPermission()
+	{ [/admin/food], params [add && name && amount && category]}: AddFood(Model,String,Integer,Integer)
+	{POST [/admin/food], params [delete_id]}: DeleteFood(Model,Integer)
+	{[POST, GET] [/admin/permission], params [user_id]}: updatePermission(Model,Integer)
+	{[GET, POST] [/admin/food], params [update_id]}: UpdateFoodForm(Model,Integer)
+	{ [/admin/food], params [update && name && amount && category]}: UpdateFood(Model,Integer,String,Integer,Integer)
+	{[POST, GET] [/admin/permission], params [action && description && add]}: addPermission(Model,String,String)
+date:2021-07-21 16:12:49	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:12 mappings in <unknown>
+date:2021-07-21 16:13:03	thread:main	X-Track:	level:TRACE	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:
+	c.e.a.a.c.A.AdminController:
+	{[POST, GET] [/admin/permission/update]}: update(Model,HttpServletRequest)
+	{GET [/admin/food]}: selectFood(Model)
+	{ [/admin/food], params [addFood]}: CreateFood(Model)
+	{GET [/admin]}: viewAdmin()
+	{ [/admin/food], params [update && name && amount && category]}: UpdateFood(Model,Integer,String,Integer,Integer)
+	{POST [/admin/permission], params [addPermission]}: formPermission()
+	{[POST, GET] [/admin/permission]}: viewPermission(Model)
+	{POST [/admin/food], params [delete_id]}: DeleteFood(Model,Integer)
+	{ [/admin/food], params [add && name && amount && category]}: AddFood(Model,String,Integer,Integer)
+	{[GET, POST] [/admin/food], params [update_id]}: UpdateFoodForm(Model,Integer)
+	{[POST, GET] [/admin/permission], params [action && description && add]}: addPermission(Model,String,String)
+	{[POST, GET] [/admin/permission], params [user_id]}: updatePermission(Model,Integer)
+date:2021-07-21 16:13:03	thread:main	X-Track:	level:DEBUG	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:12 mappings in <unknown>
